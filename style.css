@@ -1,0 +1,73 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f2f2f2;
+}
+
+.container{
+    width:350px;
+    margin:80px auto;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.link{
+    color:blue;
+    cursor:pointer;
+}
+
+#dashboard{
+    display:none;
+}
+
+.sidebar{
+    width:220px;
+    height:100vh;
+    background:#007bff;
+    color:white;
+    float:left;
+    padding:20px;
+}
+
+.sidebar div{
+    padding:10px;
+    cursor:pointer;
+}
+
+.sidebar div:hover{
+    background:#0056b3;
+}
+
+.content{
+    margin-left:240px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:8px;
+    box-shadow:0 0 5px gray;
+}

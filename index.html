@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unified Campus Education and Student Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SIGNUP -->
+<div id="signup" class="container">
+<h2>Student Sign Up</h2>
+<input type="text" id="signupUser" placeholder="Username">
+<input type="password" id="signupPass" placeholder="Password">
+<button onclick="signup()">Sign Up</button>
+<p>Already have account? <span class="link" onclick="showLogin()">Login</span></p>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="container" style="display:none;">
+<h2>Student Login</h2>
+<input type="text" id="loginUser" placeholder="Username">
+<input type="password" id="loginPass" placeholder="Password">
+<button onclick="login()">Login</button>
+<p>Don't have account? <span class="link" onclick="showSignup()">Sign Up</span></p>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard">
+
+<div class="sidebar">
+<h3>Student Portal</h3>
+
+<div onclick="showSection('classes')">Classes</div>
+<div onclick="showSection('assignments')">Assignments</div>
+<div onclick="showSection('exams')">Exams</div>
+<div onclick="showSection('courses')">Courses</div>
+<div onclick="showSection('results')">Results</div>
+<div onclick="showSection('timetable')">Timetable</div>
+<div onclick="showSection('attendance')">Attendance</div>
+<div onclick="showSection('notifications')">Notifications</div>
+<div onclick="logout()">Logout</div>
+
+</div>
+
+<div class="content" id="contentArea">
+<h2>Welcome Student</h2>
+<p>Select an option from sidebar.</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
